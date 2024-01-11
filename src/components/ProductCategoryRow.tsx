@@ -4,10 +4,14 @@ import ProductRow from "./ProductRow";
 function ProductCategoryRow(products: any) {
   return (
     <>
-      {/* TODO: Make CATEGORY h6 to be dynamic*/}
-      <h6>CATEGORY</h6>
       <table className="table table-striped table-bordered">
+        <caption className="caption-top"></caption>
         <thead>
+          <tr>
+            <td colSpan={2} className="text-center">
+              <strong>{products.product[0].category}</strong>
+            </td>
+          </tr>
           <tr>
             <th>Name</th>
             <th>Price</th>
