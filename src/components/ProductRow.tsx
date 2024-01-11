@@ -1,5 +1,4 @@
-// TODO: Change ANY here to expect a dictionary
-function ProductRow({ name, price }: any) {
+function ProductRow({ name, price }: { name: string; price: string }) {
   return (
     <p>
       {name} {price}
