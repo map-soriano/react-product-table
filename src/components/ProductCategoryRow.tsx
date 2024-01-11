@@ -4,7 +4,7 @@ import ProductRow from "./ProductRow";
 function ProductCategoryRow(products: any) {
   return (
     <>
-      <table className="table table-bordered">
+      <table className="table table-sm table-bordered">
         <thead>
           <tr>
             <td colSpan={2} className="text-center">
