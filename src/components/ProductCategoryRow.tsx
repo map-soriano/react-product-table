@@ -23,6 +23,7 @@ function ProductCategoryRow(products: any) {
               key={product.name}
               name={product.name}
               price={product.price}
+              stocked={product.stocked}
             />
           ))}
         </tbody>
