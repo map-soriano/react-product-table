@@ -1,13 +1,7 @@
-import ProductTable from "./components/ProductTable";
-import SearchBar from "./components/SearchBar";
+import FilterableProductTable from "./components/FilterableProductTable";
 
 function App() {
-  return (
-    <>
-      <SearchBar />
-      <ProductTable products={JSON_RESPONSE} />
-    </>
-  );
+  return <FilterableProductTable products={JSON_RESPONSE} />;
 }
 
 const JSON_RESPONSE = [
