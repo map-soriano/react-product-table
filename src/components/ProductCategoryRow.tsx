@@ -5,7 +5,6 @@ function ProductCategoryRow(products: any) {
   return (
     <>
       <table className="table table-bordered">
-        <caption className="caption-top"></caption>
         <thead>
           <tr>
             <td colSpan={2} className="text-center">
