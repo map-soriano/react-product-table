@@ -1,8 +1,9 @@
 function ProductRow({ name, price }: { name: string; price: string }) {
   return (
-    <p>
-      {name} {price}
-    </p>
+    <tr>
+      <td>{name}</td>
+      <td>{price}</td>
+    </tr>
   );
 }
 

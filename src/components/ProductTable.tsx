@@ -12,7 +12,6 @@ function ProductTable({ products }: any) {
 
   return (
     <>
-      <h5>Name Price</h5>
       <ProductCategoryRow product={FRUITS} />
       <ProductCategoryRow product={VEGETABLES} />
     </>
