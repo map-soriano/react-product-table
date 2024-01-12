@@ -1,15 +1,26 @@
 import ProductCategoryRow from "./ProductCategoryRow";
 
-// TODO: Change ANY here to expect a dictionary
-function ProductTable({ products }: any) {
+type productShape = {
+  category: string;
+  price: string;
+  stocked: boolean;
+  name: string;
+};
+
+type productList = {
+  products: productShape[];
+};
+
+function ProductTable({ products }: productList) {
   const FRUITS = products.filter(
-    (product: any) => product.category == "Fruits"
+    (product: productShape) => product.category == "Fruits"
   );
 
   const VEGETABLES = products.filter(
-    (product: any) => product.category == "Vegetables"
+    (product: productShape) => product.category == "Vegetables"
   );
 
+  // TODO: Fix sending "product" as prop but accepting "products" as prop
   return (
     <>
       <ProductCategoryRow product={FRUITS} />

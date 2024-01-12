@@ -1,7 +1,18 @@
 import ProductRow from "./ProductRow";
 
-// TODO: Change ANY here to expect a dictionary
-function ProductCategoryRow(products: any) {
+type productShape = {
+  category: string;
+  price: string;
+  stocked: boolean;
+  name: string;
+};
+
+type productList = {
+  products: productShape[];
+};
+
+function ProductCategoryRow(products: productList) {
+  // TODO: Fix ESLint errors
   return (
     <>
       <table className="table table-sm table-bordered">
@@ -17,7 +28,7 @@ function ProductCategoryRow(products: any) {
           </tr>
         </thead>
         <tbody>
-          {products.product.map((product: any) => (
+          {products.product.map((product: productList) => (
             <ProductRow
               key={product.name}
               name={product.name}

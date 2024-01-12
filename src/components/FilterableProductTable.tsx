@@ -1,7 +1,18 @@
 import SearchBar from "./SearchBar";
 import ProductTable from "./ProductTable";
 
-function FilterableProductTable({ products }: any) {
+type productShape = {
+  category: string;
+  price: string;
+  stocked: boolean;
+  name: string;
+};
+
+type productList = {
+  products: productShape[];
+};
+
+function FilterableProductTable({ products }: productList) {
   return (
     <>
       <SearchBar />
