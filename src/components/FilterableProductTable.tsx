@@ -26,6 +26,7 @@ function FilterableProductTable({ products }: FilterableProductTableProps) {
         inStockOnly={inStockOnly}
         onInStockOnlyChange={setInStockOnly}
       />
+      <br />
       <ProductTable
         products={products}
         searchText={searchText}
