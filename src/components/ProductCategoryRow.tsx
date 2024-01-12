@@ -13,13 +13,21 @@ type productList = {
 
 function ProductCategoryRow(products: productList) {
   // TODO: Fix ESLint errors
+  let category: string;
+
+  try {
+    category = products.product[0].category;
+  } catch (error) {
+    return;
+  }
+
   return (
     <>
       <table className="table table-sm table-bordered">
         <thead>
           <tr>
             <td colSpan={2} className="text-center">
-              <strong>{products.product[0].category}</strong>
+              <strong>{category}</strong>
             </td>
           </tr>
           <tr>
