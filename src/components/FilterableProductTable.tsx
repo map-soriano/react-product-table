@@ -3,18 +3,18 @@ import { useState } from "react";
 import SearchBar from "./SearchBar";
 import ProductTable from "./ProductTable";
 
-type productShape = {
+type FilterableProductTablePropShape = {
   category: string;
   price: string;
   stocked: boolean;
   name: string;
 };
 
-type productList = {
-  products: productShape[];
+type FilterableProductTableProps = {
+  products: FilterableProductTablePropShape[];
 };
 
-function FilterableProductTable({ products }: productList) {
+function FilterableProductTable({ products }: FilterableProductTableProps) {
   const [searchText, setSearchText] = useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
 

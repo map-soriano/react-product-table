@@ -1,14 +1,14 @@
 type SearchBarProps = {
   searchText: string;
-  onSearchTextChange: (e: string) => void;
   inStockOnly: boolean;
+  onSearchTextChange: (e: string) => void;
   onInStockOnlyChange: (e: boolean) => void;
 };
 
 function SearchBar({
   searchText,
-  onSearchTextChange,
   inStockOnly,
+  onSearchTextChange,
   onInStockOnlyChange,
 }: SearchBarProps) {
   return (

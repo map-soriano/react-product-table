@@ -1,10 +1,10 @@
-type Product = {
+type ProductRowProps = {
   name: string;
   price: string;
   stocked: boolean;
 };
 
-function ProductRow({ name, price, stocked }: Product) {
+function ProductRow({ name, price, stocked }: ProductRowProps) {
   return stocked ? (
     <tr className="table-success">
       <td>{name}</td>

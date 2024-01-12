@@ -1,17 +1,17 @@
 import ProductRow from "./ProductRow";
 
-type productShape = {
+type ProductCategoryRowPropShape = {
   category: string;
   price: string;
   stocked: boolean;
   name: string;
 };
 
-type productList = {
-  products: productShape[];
+type ProductCategoryRowProps = {
+  products: ProductCategoryRowPropShape[];
 };
 
-function ProductCategoryRow(products: productList) {
+function ProductCategoryRow(products: ProductCategoryRowProps) {
   // TODO: Fix ESLint errors
   let category: string;
 
@@ -36,7 +36,7 @@ function ProductCategoryRow(products: productList) {
           </tr>
         </thead>
         <tbody>
-          {products.product.map((product: productList) => (
+          {products.product.map((product: ProductCategoryRowProps) => (
             <ProductRow
               key={product.name}
               name={product.name}

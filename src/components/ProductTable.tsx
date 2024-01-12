@@ -1,26 +1,30 @@
 import ProductCategoryRow from "./ProductCategoryRow";
 
-type productShape = {
+type ProductTablePropShape = {
   category: string;
   price: string;
   stocked: boolean;
   name: string;
 };
 
-type productList = {
-  products: productShape[];
+type ProductTableProps = {
+  products: ProductTablePropShape[];
   searchText: string;
   inStockOnly: boolean;
 };
 
-function ProductTable({ products, searchText, inStockOnly }: productList) {
+function ProductTable({
+  products,
+  searchText,
+  inStockOnly,
+}: ProductTableProps) {
   const FRUITS = products.filter(
-    (product: productShape) =>
+    (product: ProductTablePropShape) =>
       product.category == "Fruits" && product.name.includes(searchText)
   );
 
   const VEGETABLES = products.filter(
-    (product: productShape) =>
+    (product: ProductTablePropShape) =>
       product.category == "Vegetables" && product.name.includes(searchText)
   );
 
