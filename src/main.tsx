@@ -6,7 +6,7 @@ import "./App.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div className="container-fluid">
+    <div className="container-fluid d-flex flex-column justify-content-center align-items-center">
       <App />
     </div>
   </React.StrictMode>
