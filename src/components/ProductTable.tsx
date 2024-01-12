@@ -20,12 +20,14 @@ function ProductTable({
 }: ProductTableProps) {
   const FRUITS = products.filter(
     (product: ProductTablePropShape) =>
-      product.category == "Fruits" && product.name.includes(searchText)
+      product.category == "Fruits" &&
+      product.name.toLowerCase().includes(searchText.toLowerCase())
   );
 
   const VEGETABLES = products.filter(
     (product: ProductTablePropShape) =>
-      product.category == "Vegetables" && product.name.includes(searchText)
+      product.category == "Vegetables" &&
+      product.name.toLowerCase().includes(searchText.toLowerCase())
   );
 
   // TODO: Fix sending "product" as prop but accepting "products" as prop
