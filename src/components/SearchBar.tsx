@@ -11,6 +11,7 @@ function SearchBar({
   onSearchTextChange,
   onInStockOnlyChange,
 }: SearchBarProps) {
+  // TODO: Improve search bar styling
   return (
     <>
       <div className="mt-2">

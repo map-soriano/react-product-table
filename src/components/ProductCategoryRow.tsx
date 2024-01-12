@@ -12,7 +12,8 @@ type ProductCategoryRowProps = {
 };
 
 function ProductCategoryRow(products: ProductCategoryRowProps) {
-  // TODO: Fix ESLint errors
+  // FIXME: Fix ESLint errors
+  // TODO: Improve table styling
   let category: string;
 
   try {

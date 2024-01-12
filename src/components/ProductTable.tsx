@@ -30,7 +30,7 @@ function ProductTable({
       product.name.toLowerCase().includes(searchText.toLowerCase())
   );
 
-  // TODO: Fix sending "product" as prop but accepting "products" as prop
+  // FIXME: sending "product" as prop but accepting "products" as prop
   return (
     <>
       <ProductCategoryRow
