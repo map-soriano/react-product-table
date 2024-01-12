@@ -14,7 +14,7 @@ function SearchBar({
   return (
     <>
       <div className="mt-2">
-        <form className="form-control non-interactive">
+        <form className="form-control">
           <label htmlFor="search">
             <input
               id="search"

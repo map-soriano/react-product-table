@@ -23,7 +23,7 @@ function ProductCategoryRow(products: ProductCategoryRowProps) {
 
   return (
     <>
-      <table className="table table-sm table-bordered border border-2 border-black non-interactive">
+      <table className="table table-sm table-bordered border border-2 border-black">
         <thead>
           <tr>
             <td colSpan={2} className="text-center">
