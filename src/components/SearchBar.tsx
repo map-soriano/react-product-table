@@ -14,7 +14,7 @@ function SearchBar({
   return (
     <>
       <div className="mt-2">
-        <form className="form-control">
+        <form className="form-control shadow-sm p-2">
           <label htmlFor="search">
             <input
               id="search"
@@ -24,11 +24,11 @@ function SearchBar({
               onChange={(e) => onSearchTextChange(e.target.value)}
             />
           </label>
-          <br />
           <label htmlFor="stock">
             <input
               id="stock"
               type="checkbox"
+              className="form-check-input ms-3"
               checked={inStockOnly}
               onChange={(e) => onInStockOnlyChange(e.target.checked)}
             />{" "}
