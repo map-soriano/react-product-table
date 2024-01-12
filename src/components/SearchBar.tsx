@@ -14,13 +14,13 @@ function SearchBar({
   return (
     <>
       <div className="mt-2">
-        <form className="form-control">
+        <form className="form-control non-interactive">
           <label htmlFor="search">
             <input
               id="search"
               placeholder="Search..."
               value={searchText}
-              className="form-control"
+              className="form-control interactive"
               onChange={(e) => onSearchTextChange(e.target.value)}
             />
           </label>

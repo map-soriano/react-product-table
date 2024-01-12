@@ -2,3 +2,8 @@
     cursor: default;
     caret-color: transparent;
 }
+
+.interactive {
+    cursor: text;
+    caret-color: black;
+}
